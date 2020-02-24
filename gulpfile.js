@@ -8,15 +8,15 @@ var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var server = require("browser-sync").create();
 
-gulp.task("less", function(){
-return gulp.src("source/less/**/*.less")
-.pipe(less())
+gulp.task("sass", function(){
+return gulp.src("source/sass/**/*.scss")
+.pipe(sass())
 .pipe(gulp.dest("source/css"))
 .pipe(server.reload({stream: true}))
 });
@@ -30,7 +30,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
@@ -51,10 +51,10 @@ return del("build");
 });
 
 gulp.task("css", function () {
-return gulp.src("source/less/style.less")
+return gulp.src("source/sass/style.scss")
 .pipe(plumber())
 .pipe(sourcemap.init())
-.pipe(less())
+.pipe(sass())
 .pipe(postcss([
 autoprefixer()
 ]))
@@ -100,7 +100,7 @@ server.reload();
 done();
 });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("symbols", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });

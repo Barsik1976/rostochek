@@ -1,0 +1,43 @@
+.no-outline() {
+  outline: none;
+  background: transparent;
+}
+
+@font-face {
+  font-family: "AntiQuasi";
+  src: url("../fonts/antiquasi_regular-webfont.woff2") format("woff2");
+  src: url("../fonts/antiquasi_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helios";
+  src: url("../fonts/helios-bold-webfont.woff2") format("woff2");
+  src: url("../fonts/helios-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helios";
+  src: url("../fonts/helioslight-webfont.woff2") format("woff2");
+  src: url("../fonts/helioslight-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@link-color: #59a8dd;
+@link-color-hover: #1a5b87;
+@link-color-click: rgba(89, 168, 221, 0.5);
+@nav-link-color: #59361b;
+@nav-link-color-hover: #a51b57;
+@nav-link-color-click: #811645;
+@nav-link-color-active: #d71c6d;
+@content-color: #59361b;
+@content-link-color: #d71c6d;
+@bg-color-button: #d71c6d;
+@bg-color-button-hover: #a51b57;
+@button-color: #ffffff;
+@button-color-hover: rgba(255, 255, 255, 0.5);
+@button-color-hover-click: rgba(255, 255, 255, 0.2);
