@@ -1,0 +1,71 @@
+.field-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.field-item {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.field-item span:first-child {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: #95c12b;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.field-item--questions {
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.field-item__required {
+  position: absolute;
+  font-size: 34px;
+  font-weight: 300;
+  color: #ca4073;
+  top: 0px;
+  right: -18px;
+}
+
+.field-item__notice {
+  position: relative;
+  width: 660px;
+  margin: 0;
+}
+
+.field-item__notice > a {
+  color: #000000;
+}
+
+.field-item__notice > span {
+  color: #ca4073;
+}
+
+.field-item__notice::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 110px;
+  top: 70px;
+  left: 765px;
+  background-image: url("../img/green_balloon.png");
+  background-repeat: no-repeat;
+  background-size: 45px 110px;
+}
+
+@include _1471 {
+  .field-item__notice::after {
+    left: 690px;
+  }
+}
+
+@include _1080 {
+  .field-item__notice::after {
+    left: 635px;
+  }
+}

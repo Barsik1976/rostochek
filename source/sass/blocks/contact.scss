@@ -1,0 +1,19 @@
+.contact {
+  width: 292px;
+}
+
+.contact__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contact::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 23px;
+  top: 23px;
+  left: 198px;
+  background-image: url("../img/speaker_header.png");
+  background-repeat: no-repeat;
+}

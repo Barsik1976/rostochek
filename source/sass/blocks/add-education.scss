@@ -1,0 +1,149 @@
+.add-education {
+  width: 1140px;
+}
+
+@include _1471 {
+  .add-education {
+    width: 780px;
+  }
+}
+
+@include _1080 {
+  .add-education {
+    width: 680px;
+  }
+}
+
+.add-education__title {
+  margin: 0;
+  color: #ca4073;
+  margin-bottom: 58px;
+}
+
+.add-education__list {
+  position: relative;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.add-education li {
+  margin-bottom: 40px;
+}
+
+.add-education__link {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.add-education__subtitle {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.add-education__list--bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 87px;
+}
+
+@include _1080 {
+  .add-education__list--bottom {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+}
+
+.add-education__list--bottom li {
+  width: 350px;
+}
+
+.add-education__list--bottom li:first-child {
+  width: 255px;
+  margin-right: 370px;
+}
+
+@include _1471 {
+  .add-education__list--bottom li:first-child {
+    margin-right: 250px;
+  }
+}
+
+@include _1080 {
+  .add-education__list--bottom li:first-child {
+    margin-right: 0;
+  }
+}
+
+.add-education__text--timetable {
+  color: #ca4073;
+  margin-top: 32px;
+}
+
+.add-education__list--up::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/family.jpg");
+  background-repeat: no-repeat;
+  width: 816px;
+  height: 320px;
+  top: 0;
+  right: 0;
+}
+
+@include _1471 {
+  .add-education__list--up::after {
+    width: 391px;
+    background-image: url("../img/family_tablet.jpg");
+  }
+}
+
+.add-education__item--wood::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/woodworker.jpg");
+  background-repeat: no-repeat;
+  background-size: 275px 177px;
+  width: 275px;
+  height: 177px;
+  bottom: 0px;
+  left: 265px;
+}
+
+@include _1471 {
+  .add-education__item--wood::after {
+    background-size: 80% auto;
+    left: 150px;
+  }
+}
+
+.add-education__item--liza::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/liza.jpg");
+  background-repeat: no-repeat;
+  background-size: 233px 156px;
+  width: 233px;
+  height: 156px;
+  bottom: 0px;
+  right: 0px;
+}
+
+@include _1471 {
+  .add-education__item--liza::after {
+    background-size: 70% auto;
+    right: -70px;
+  }
+}
+
+@include _1080 {
+  .add-education__item--wood::after,
+  .add-education__item--liza::after {
+    display: none;
+  }
+}
+
+
+

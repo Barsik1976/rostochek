@@ -1,0 +1,31 @@
+.sidebar-nav {
+  width: 235px;
+  list-style-type: none;
+}
+
+.sidebar-nav__link {
+  position: relative;
+  color: #32312e;
+}
+
+.sidebar-nav__link--active {
+  color: #ca4073;
+}
+
+.sidebar-nav__link--active::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 16px;
+  background-image: url("../img/red_butterfly_select.png");
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.site-text.sidebar-nav {
+  line-height: 28px;
+}
+
+.sidebar-nav li {
+  margin-bottom: 8px;
+}

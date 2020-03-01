@@ -1,0 +1,67 @@
+.kinder-garten {
+  width: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: 235px;
+}
+
+@include _1471 {
+  .kinder-garten {
+    width: 550px;
+    margin-left: 200px;
+  }
+}
+
+@include _1080 {
+  .kinder-garten--hidden {
+    display: none;
+  }
+}
+
+.kinder-garten__link {
+  font-size: 42px;
+  line-height: 24px;
+  color: #95c12b;
+  text-decoration: none;
+}
+
+.kinder-garten__link span {
+  font-size: 20px;
+  color: #202020;
+}
+
+.kinder-garten__link--mini::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  right: 180px;
+  background-image: url("../img/yellow_butterfly.png");
+  background-repeat: no-repeat;
+}
+
+@include _1471 {
+  .kinder-garten__link--mini::before {
+    right: 150px;
+  }
+}
+
+.kinder-garten__link--mini::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  right: 0;
+  background-image: url("../img/pink_butterfly.png");
+  background-repeat: no-repeat;
+}

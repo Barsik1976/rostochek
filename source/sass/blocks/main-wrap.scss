@@ -1,0 +1,35 @@
+.main-wrap {
+  width: 100%;
+  background-color: #fdf6f4;
+}
+
+.main-wrap {
+  width: 100%;
+  background-color: #f9f4bd;
+}
+
+.main-wrap--light {
+  background-color: #fdf6f4;
+}
+
+.main-wrap__education {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 113px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@include _1080 {
+  .main-wrap__education {
+    padding-bottom: 50px;
+  }
+}
+
+.main-wrap__inner {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}

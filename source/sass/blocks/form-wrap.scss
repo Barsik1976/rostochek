@@ -1,0 +1,42 @@
+.form-wrap {
+  width: 810px;
+  padding-bottom: 75px;
+  padding-left: 290px;
+}
+
+@include _1471 {
+  .form-wrap {
+    width: 735px;
+    padding-left: 260px;
+  }
+}
+
+@include _1080 {
+  .form-wrap {
+    width: 680px;
+    padding-left: 20px;
+  }
+}
+
+.form-wrap__legend {
+  margin-top: 28px;
+  margin-bottom: 35px;
+}
+
+.form-wrap::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 225px;
+  height: 200px;
+  background-image: url("../img/girl_toys.png");
+  background-repeat: no-repeat;
+  top: 135px;
+  left: 0px;
+}
+
+@include _1080 {
+  .form-wrap::before {
+    display: none;
+  }
+}

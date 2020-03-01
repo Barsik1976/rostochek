@@ -1,0 +1,55 @@
+.preview-kinder {
+  width: 505px;
+  color: #201c20;
+}
+
+.preview-kinder__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.preview-kinder__text {
+  margin: 0;
+}
+
+.preview-kinder__text--second {
+  margin-top: 33px;
+}
+
+.preview-kinder__more {
+  position: relative;
+  display: block;
+  margin-top: 35px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@include _1471 {
+  .preview-kinder__more {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+  }
+}
+
+.preview-kinder__more::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 23px;
+  top: -23px;
+  left: -63px;
+  background-image: url("../img/dragonfly.png");
+  background-repeat: no-repeat;
+}
+
+.preview-kinder__more::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 28px;
+  bottom: 5px;
+  left: 182px;
+  background-image: url("../img/light_butterfly.png");
+  background-repeat: no-repeat;
+}

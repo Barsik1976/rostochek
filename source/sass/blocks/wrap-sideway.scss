@@ -1,0 +1,22 @@
+.wrap-sideway {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@include _1471 {
+  .wrap-sideway {
+    width: 1024px;
+  }
+}
+
+@include _1080 {
+  .wrap-sideway {
+    width: 680px;
+  }
+}
+
+.wrap-sideway__list {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,30 @@
+.partner {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@include _1471 {
+  .partner {
+    width: 780px;
+  }
+}
+
+@include _1080 {
+  .partner {
+    width: 680px;
+    flex-direction: column;
+  }
+}
+
+.partner__text {
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+.partner__link {
+  color: #97c22e;
+}

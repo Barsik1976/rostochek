@@ -1,0 +1,65 @@
+.form-users {
+
+}
+
+.form-users__field {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-users select,
+.form-users input[type="text"],
+.form-users input[type="tel"] {
+  box-sizing: content-box;
+  width: 350px;
+  padding: 5px;
+  min-height: 30px;
+  border: 1px rgba(149, 193, 43, 1.0) solid;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.form-users option {
+  font-family: IntroHeadL-Base;
+  font-size: 25px;
+  color: #000000;
+}
+
+.form-users__field select {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@include _1471 {
+  .form-users__field select {
+    height: 30px;
+  }
+}
+
+.form-users__field textarea {
+  min-height: 203px;
+  padding: 20px;
+  border: 1px rgba(149, 193, 43, 1.0) solid;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.form-users__button-form {
+  margin-left: auto;
+  margin-top: 113px;
+}
+
+.form-users input[type="text"],
+.form-users input[type="tel"],
+.form-users select,
+.form-users textarea {
+  &:hover,
+  &:focus {
+    border-color: #556d1b;
+  }
+}

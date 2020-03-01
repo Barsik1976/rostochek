@@ -1,0 +1,106 @@
+.header-nav {
+  width: 1140px;
+}
+
+@include _1471 {
+  .header-nav {
+    width: 1024px;
+  }
+}
+
+@include _1080 {
+  .header-nav {
+    width: 680px;
+  }
+}
+
+.header-nav__phone {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 35px;
+  margin-left: auto;
+}
+
+.header-nav__logo {
+  position: relative;
+  text-decoration: none;
+}
+
+.header-nav__kinderes {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-nav::before {
+  position: absolute;
+  content: "";
+  width: 73px;
+  height: 62px;
+  top: 12px;
+  left: -32px;
+  background-image: url("../img/bird_logo.png");
+  background-repeat: no-repeat;
+}
+
+@include _1471 {
+  .header-nav::before {
+    left: 20px;
+  }
+}
+
+.header-nav__logo::before {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 63px;
+  left: -102px;
+  background-image: url("../img/before_logo.png");
+  background-repeat: no-repeat;
+}
+
+@include _1471 {
+  .header-nav__logo::before {
+    display: none;
+  }
+}
+
+@include _1080 {
+  .header-nav__logo {
+    font-size: 85px;
+    font-weight: 700;
+    color: #925126;
+  }
+}
+
+.header-nav__logo::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 142px;
+  height: 106px;
+  top: -30px;
+  right: -150px;
+  background-image: url("../img/after_logo.png");
+  background-repeat: no-repeat;
+}
+
+.header-nav__open {
+  display: none;
+}
+
+@include _1080 {
+  .header-nav__open {
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    margin-left: auto;
+    margin-top: 45px;
+    border: none;
+  }
+}
+
+
+

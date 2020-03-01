@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Rostochek</title>
+  <link rel="preload" href="fonts/introheadl-base-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header-main">
+    <div class="header-nav header-main__wrap">
+     <div class="header-nav__phone contact">
+        <a class="contact__link site-text" href="" title="телефон">+7 (4912) 25-37-17</a>
+        <a class="contact__link site-text site-text--hymn" href="" title="гимн">наш гимн</a>
+      </div>
+      <nav class="header-nav__kinderes">
+        <a class="header-nav__logo logo" href="index.html" title="логотип">Росточек</a>
+        <ul class="kinder-garten kinder-garten--hidden">
+          <li>
+            <a class="kinder-garten__link" href="" title="сад на павлова">детский сад<br> <span>на Павлова</span></a>
+          </li>
+          <li>
+            <a class="kinder-garten__link" href="" title="сад в роще">детский сад<br> <span>в Роще</span></a>
+          </li>
+          <li>
+            <a class="kinder-garten__link kinder-garten__link--mini" href="" title="мини-ясли"><span>мини-ясли</span><br>крошечки<br> хорошечки</a>
+          </li>
+        </ul>
+        <button class="header-nav__open"></button>
+      </nav>
+    </div>
+    <div class="site-nav">
+      <ul class="site-nav__list">
+        <li>
+          <a class="site-nav__link headline headline--middle" href="" title="о нас">О нас</a>
+        </li>
+        <li>
+          <a class="site-nav__link site-nav__link--active headline headline--middle" title="родителям">Родителям</a>
+        </li>
+        <li>
+          <a class="site-nav__link headline headline--middle" href="" title="дополнительное образование">Дополнительное образование</a>
+        </li>
+        <li>
+          <a class="site-nav__link headline headline--middle" href="" title="отзывы">Отзывы</a>
+        </li>
+        <li>
+          <a class="site-nav__link headline headline--middle" href="" title="контакты">Контакты</a>
+        </li>
+        <li>
+          <a class="site-nav__link headline headline--middle button-request" href="" title="заявка">оставить заявку</a>
+        </li>
+      </ul>
+  </div>
+  </header>
+  <main class="main-wrap main-wrap--light">
+    <div class="main-wrap__inner wrap-sideway">
+      <ul class="wrap-sideway__list sidebar-nav site-text">
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Принципы воспитания</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Территория</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Интерьер</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Ритм жизни в "Росточке"</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link sidebar-nav__link--active" title="">Питание</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Развивающие занятия</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__link" href="parents/" title="">Подготовка к школе</a>
+        </li>
+      </ul>
+      <section class="food">
+        <h2 class="food__title headline">Витамин доброты</h2>
+        <img src="img/vitamin.jpg" alt="обед" width="855" height="593">
+        <p class="food__text site-text">В «Росточке» действует система 4-х разового полноценного домашнего питания.<br>
+        Все блюда ежедневно готовятся на собственной кухне с любовью и заботой.</p>
+        <p class="food__text food__text--subtitle site-text">Рацион включает в себя:</p>
+        <ul class="food__list site-text">
+          <li class="food__item">сезонные фрукты и ягоды;</li>
+          <li class="food__item">каши и запеканки;</li>
+          <li class="food__item">блюда из творога и кисломолочные продукты;</li>
+          <li class="food__item">мёд, орехи и сухофрукты;</li>
+          <li class="food__item">мясные, рыбные и овощные супы;</li>
+          <li class="food__item">овощные салаты, свежие овощи и зелень, выращенные на участке;</li>
+          <li class="food__item">разнообразные блюда из мяса, рыбы и овощей в качестве горячего на ужин;</li>
+          <li class="food__item">компоты, кисели, морсы, напитки и чаи;</li>
+          <li class="food__item">свежая выпечка и десерты, приготовленные вместе с детьми.</li>
+        </ul>
+        <a class="food__link headline headline--middle" href="" title="">Примерное меню</a>
+      </section>
+    </div>
+    <section class="main-wrap__inner form-wrap">
+      <h2 class="form-wrap__legend headline headline--form">Оставить заявку</h2>
+        <form class="form-users" action="https://rostochek.ru" method="post">
+          <p class="form-users__field field-item headline headline--middle">Выберите интересующий филиал:<span></span>
+            <select class="form-users__field" size="1" name="choice-kindergarten" required>
+              <option value="" selected>&nbsp;</option>
+              <option value="p1">"Росточек" на Павлова</option>
+              <option value="p2">"Росточек" в Роще</option>
+              <option value="p3">"Крошечки хорошечки" мини-ясли</option>
+            </select>
+          <span class="field-item__required">*</span>
+        </p>
+          <fieldset class="form-users__field">
+            <p class="field-item headline headline--middle">
+              <label for="name">Ваши Фамилия, Имя и Отчество:</label><span class="field-item__required">*</span>
+              <input id="name" name="full-name" type="text" placeholder="" required>
+            </p>
+            <p class="field-item headline headline--middle">
+              <label for="tel">Укажите Ваш номер телефона:</label><span class="field-item__required">*</span>
+              <input id="tel" name="tel-number" type="tel" placeholder="" required>
+            </p>
+          </fieldset>
+          <fieldset class="form-users__field headline headline--middle">
+            <p class="field-item field-item--questions">
+              <label for="questions">Дополнительная информация, вопросы или пожелания:</label>
+              <textarea id="questions" name="questions" placeholder=""></textarea>
+            </p>
+          </fieldset>
+          <p class="field-item__notice site-text">Поля, отмеченные <span>*</span>, обязательны для заполнения.<br> Нажимая на кнопку «Записаться», Вы даёте согласие на обработку Ваших персональных данных в соответствии с <a href="">указанными условиями</a>.</p>
+            <input class="form-users__button-form button-request button-request--form" type="submit" value="Отправить заявку">
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-main">
+    <div class="footer-main__wrap partner">
+      <p class="partner__text site-text">Фото и видео: мама <a class="partner__link" href="" title="фото и видео">Елизавета Волхонцева</a>. Слова гимна: мама <a class="partner__link" href="" title="слова гимна">Элла Хрусталёва</a>.</p>
+    <p class="partner__text site-text">В вашем бизнесе всё <a class="partner__link" href="#work" href="" title="родителям">работает само</a></p>
+  </div>
+  </footer>
+</body>
+</html>
